@@ -8,4 +8,4 @@ RUN chmod a+x /usr/local/bin/dehydrated && mkdir -p /var/www/dehydrated \
     && mkdir -p /usr/local/etc/dehydrated/
 ADD config /usr/local/etc/dehydrated/config
 
-ADD sites.conf dehydrated.conf /etc/nginx/conf.d/
+ADD default.conf sites.conf dehydrated.conf /etc/nginx/conf.d/
