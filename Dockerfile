@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-ARG DEHYDRATED_VERSION=v0.4.0
+ARG DEHYDRATED_VERSION=v0.6.1
 
 RUN apk add --no-cache curl bash openssl
 ADD https://raw.githubusercontent.com/lukas2511/dehydrated/${DEHYDRATED_VERSION}/dehydrated /usr/local/bin/
