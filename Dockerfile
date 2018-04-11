@@ -8,7 +8,8 @@ RUN chmod a+x /usr/local/bin/dehydrated && mkdir -p /var/www/dehydrated \
     && mkdir -p /usr/local/etc/dehydrated/
 ADD config /usr/local/etc/dehydrated/config
 
-ADD default.conf sites.conf dehydrated.conf tls.conf /etc/nginx/conf.d/
+ADD default.conf sites.conf tls.conf /etc/nginx/conf.d/
+ADD tls-include.conf /etc/nginx/
 
 VOLUME [ "/etc/nginx/sites" ]
 VOLUME [ "/etc/dehydrated" ]
